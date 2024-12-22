@@ -1,0 +1,1 @@
+# staticWebUsings3andTerraform
