@@ -1,4 +1,5 @@
 # DevOps Project: Static Website Deployment on AWS S3 using Terraform
+![Project Banner](./project.png)
 
 ## Overview
 
