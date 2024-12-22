@@ -36,8 +36,7 @@ project-folder/ ├── main.tf # Terraform configuration for resources ├─
 ---
 
 ## Configuration Steps
-
-### 1. Clone the Repository
+1. 
 ```bash
 git clone <repository-url>
 cd project-folder
@@ -47,36 +46,42 @@ Modify variables.tf to customize the configuration:
 
 Bucket Name: Update the bucket_name variable.
 Region: Ensure the AWS region matches your requirements.
+
 3. Initialize Terraform
 bash
 Copy code
 terraform init
+
 4. Plan the Infrastructure
 Review the changes Terraform will make:
 
 bash
 Copy code
 terraform plan
+
 5. Apply the Configuration
 Deploy the infrastructure:
 
 bash
 Copy code
 terraform apply
+
 6. Verify Deployment
 Navigate to the S3 bucket in the AWS Management Console.
 Access the static website URL provided in the Terraform output.
-File Breakdown
-main.tf
+
+
+## File Breakdown
+1. main.tf
 Defines the S3 bucket, bucket policy, and static website hosting configuration.
 
-variables.tf
+2. variables.tf
 Contains customizable variables for project flexibility.
 
-outputs.tf
+3. outputs.tf
 Displays outputs such as the S3 website endpoint after deployment.
 
-index.html and error.html
+4. index.html and error.html
 Basic HTML files for the website and error handling.
 
 Clean-Up
